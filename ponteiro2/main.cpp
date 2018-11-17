@@ -21,6 +21,8 @@ int main(void) {
 	hoje.pHora = &hora;
 	hoje.pMinuto = &minuto;
 	hoje.pSegundo = &segundo;
+
+	*hoje.pHora = 24;//maneira de alterar
 	
 	printf("%i:%i:%i", *hoje.pHora, *hoje.pMinuto, *hoje.pSegundo);
 	
